@@ -1,0 +1,11 @@
+version: '2.0'
+name: my-node-js-project
+services:
+web:
+build: .
+command: npm start
+ports:
+- 5002:5002
+environment:
+PORT: 5002
+MONGO_URI: mongodb+srv://somar_96:0934491127sS@cluster0.zh1ifjm.mongodb.net/interviewsystem?retryWrites=true&w=majority
